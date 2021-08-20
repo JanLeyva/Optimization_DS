@@ -1,0 +1,13 @@
+# Cluster-median assignment
+# Andreu Meca and Jan Leyva
+
+reset;
+
+model Cluster_Median.mod;
+data Cluster_Median_medium.dat;
+expand;
+show;
+option solver cplex;
+solve;
+display x;
+display _total_solve_time;
